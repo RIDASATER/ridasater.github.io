@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets | Data Science</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">DS<span>Portfolio</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projects.html" class="active">Projets</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="education.html">Formation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-header">
+            <h1 class="slide-in">Mes Projets Data Science</h1>
+            <p class="slide-in delay-1">Explorez mes réalisations en analyse de données, machine learning et
+                visualisation</p>
+        </section>
+
+        <section class="projects-filter">
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                <button class="filter-btn" data-filter="visualisation">Visualisation</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
+                <button class="filter-btn" data-filter="big-data">Big Data</button>
+            </div>
+        </section>
+
+        <section class="projects-grid">
+            <div class="project-card" data-category="machine-learning" id="project1">
+                <div class="project-image">
+                    <img src="images/project1.jpg" alt="Analyse des sentiments">
+                </div>
+                <div class="project-details">
+                    <h3>Analyse des sentiments sur Twitter</h3>
+                    <p class="project-meta">Python • NLP • Scikit-learn • Juin 2023</p>
+                    <p>Développement d'un modèle de classification des tweets en sentiments positifs, négatifs et
+                        neutres en utilisant des techniques de traitement du langage naturel et différents algorithmes
+                        de machine learning.</p>
+                    <div class="project-tech">
+                        <span>BERT</span>
+                        <span>TensorFlow</span>
+                        <span>NLTK</span>
+                    </div>
+                    <a href="#" class="btn primary"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+                    <a href="#" class="btn secondary"><i class="fab fa-github"></i> Code source</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="visualisation" id="project2">
+                <div class="project-image">
+                    <img src="images/project2.jpg" alt="Prédiction immobilière">
+                </div>
+                <div class="project-details">
+                    <h3>Prédiction des prix immobiliers</h3>
+                    <p class="project-meta">Python • Regression • Dashboard • Avril 2023</p>
+                    <p>Création d'un modèle de prédiction des prix de l'immobilier basé sur les caractéristiques des
+                        biens, avec une interface interactive permettant d'explorer les données et les prédictions.</p>
+                    <div class="project-tech">
+                        <span>XGBoost</span>
+                        <span>Plotly</span>
+                        <span>Flask</span>
+                    </div>
+                    <a href="#" class="btn primary"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+                    <a href="#" class="btn secondary"><i class="fab fa-github"></i> Code source</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="visualisation big-data" id="project3">
+                <div class="project-image">
+                    <img src="images/project3.jpg" alt="Dashboard COVID-19">
+                </div>
+                <div class="project-details">
+                    <h3>Visualisation des données COVID-19</h3>
+                    <p class="project-meta">Python • Big Data • Mars 2023</p>
+                    <p>Conception d'un dashboard interactif présentant l'évolution de la pandémie à travers le monde,
+                        avec des cartes choroplèthes, des courbes d'évolution et des indicateurs clés.</p>
+                    <div class="project-tech">
+                        <span>Plotly Dash</span>
+                        <span>Pandas</span>
+                        <span>PySpark</span>
+                    </div>
+                    <a href="#" class="btn primary"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+                    <a href="#" class="btn secondary"><i class="fab fa-github"></i> Code source</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="nlp machine-learning" id="project4">
+                <div class="project-image">
+                    <img src="images/project4.jpg" alt="Résumé automatique">
+                </div>
+                <div class="project-details">
+                    <h3>Système de résumé automatique</h3>
+                    <p class="project-meta">Python • NLP • Février 2023</p>
+                    <p>Implémentation d'un algorithme de résumé automatique de documents en français utilisant des
+                        techniques d'extraction et des modèles de deep learning pour la génération.</p>
+                    <div class="project-tech">
+                        <span>Transformers</span>
+                        <span>spaCy</span>
+                        <span>HuggingFace</span>
+                    </div>
+                    <a href="#" class="btn primary"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+                    <a href="#" class="btn secondary"><i class="fab fa-github"></i> Code source</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="big-data" id="project5">
+                <div class="project-image">
+                    <img src="images/project5.jpg" alt="Traitement Big Data">
+                </div>
+                <div class="project-details">
+                    <h3>Traitement de données massives</h3>
+                    <p class="project-meta">PySpark • AWS • Janvier 2023</p>
+                    <p>Pipeline de traitement de données massives sur AWS EMR avec PySpark, incluant le nettoyage,
+                        l'agrégation et l'analyse de données de logs utilisateur.</p>
+                    <div class="project-tech">
+                        <span>PySpark</span>
+                        <span>AWS EMR</span>
+                        <span>Parquet</span>
+                    </div>
+                    <a href="#" class="btn primary"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+                    <a href="#" class="btn secondary"><i class="fab fa-github"></i> Code source</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Data Science Portfolio</h3>
+                <p>Portfolio d'un étudiant passionné par l'analyse de

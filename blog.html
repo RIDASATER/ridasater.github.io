@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Portfolio Data Science</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">DS<span>Portfolio</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="education.html">Formation</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-header">
+            <h1 class="slide-in">Blog Data Science</h1>
+            <p class="slide-in delay-1">Partage d'articles sur l'analyse de données, le machine learning et les bonnes
+                pratiques</p>
+        </section>
+
+        <section class="blog-container">
+            <div class="blog-posts">
+                <article class="blog-post featured">
+                    <div class="post-image">
+                        <img src="images/blog1.jpg" alt="Machine Learning">
+                        <div class="post-date">15 Mars 2023</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-category">Machine Learning</div>
+                        <h2><a href="blog-single.html">Comprendre les transformers en NLP</a></h2>
+                        <p class="post-excerpt">Une plongée dans l'architecture des modèles transformers qui ont
+                            révolutionné le traitement automatique du langage naturel ces dernières années...</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-clock"></i> 8 min de lecture</span>
+                            <a href="blog-single.html" class="read-more">Lire l'article <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="post-image">
+                        <img src="images/blog2.jpg" alt="Data Visualisation">
+                        <div class="post-date">28 Février 2023</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-category">Visualisation</div>
+                        <h2><a href="blog-single.html">Créer des dashboards interactifs avec Plotly Dash</a></h2>
+                        <p class="post-excerpt">Guide pratique pour construire des applications de visualisation de
+                            données interactives en Python avec la bibliothèque Plotly Dash...</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-clock"></i> 6 min de lecture</span>
+                            <a href="blog-single.html" class="read-more">Lire l'article <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="post-image">
+                        <img src="images/blog3.jpg" alt="Big Data">
+                        <div class="post-date">10 Février 2023</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-category">Big Data</div>
+                        <h2><a href="blog-single.html">Introduction à PySpark pour le traitement distribué</a></h2>
+                        <p class="post-excerpt">Comment utiliser PySpark pour traiter des jeux de données massifs sur
+                            des clusters distribués, avec des exemples pratiques...</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-clock"></i> 10 min de lecture</span>
+                            <a href="blog-single.html" class="read-more">Lire l'article <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="post-image">
+                        <img src="images/blog4.jpg" alt="Data Engineering">
+                        <div class="post-date">25 Janvier 2023</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-category">Data Engineering</div>
+                        <h2><a href="blog-single.html">Bonnes pratiques pour les pipelines de données</a></h2>
+                        <p class="post-excerpt">Architecture optimale, outils et méthodes pour construire des pipelines
+                            de données robustes et maintenables...</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-clock"></i> 7 min de lecture</span>
+                            <a href="blog-single.html" class="read-more">Lire l'article <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <aside class="blog-sidebar">
+                <div class="sidebar-widget">
+                    <h3>Recherche</h3>
+                    <form class="search-form">
+                        <input type="text" placeholder="Rechercher...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Catégories</h3>
+                    <ul class="categories">
+                        <li><a href="#">Machine Learning <span>5</span></a></li>
+                        <li><a href="#">Visualisation <span>3</span></a></li>
+                        <li><a href="#">Big Data <span>2</span></a></li>
+                        <li><a href="#">NLP <span>4</span></a></li>
+                        <li><a href="#">Data Engineering <span>2</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Articles récents</h3>
+                    <ul class="recent-posts">
+                        <li>
+                            <a href="#">Comprendre les transformers en NLP</a>
+                            <span>15 Mars 2023</span>
+                        </li>
+                        <li>
+                            <a href="#">Créer des dashboards avec Plotly Dash</a>
+                            <span>28 Fév 2023</span>
+                        </li>
+                        <li>
+                            <a href="#">Introduction à PySpark</a>
+                            <span>10 Fév 2023</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget tags-widget">
+                    <h3>Tags</h3>
+                    <div class="tags">
+                        <a href="#">Python</a>
+                        <a href="#">Pandas</a>
+                        <a href="#">TensorFlow</a>
+                        <a href="#">Spark</a>
+                        <a href="#">NLP</a>
+                        <a href="#">Deep Learning</a>
+                        <a href="#">SQL</a>
+                        <a href="#">DataViz</a>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Abonnez-vous à la newsletter</h2>
+                <p>Recevez les derniers articles et tutoriels directement dans votre boîte mail</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit" class="btn primary">S'abonner</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Data Science Portfolio</h3>
+                <p>Portfolio d'un étudiant passionné par l'analyse de données et l'intelligence artificielle.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projects.html">Projets</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> etudiant.ds@example.com</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Portfolio Data Science. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <
